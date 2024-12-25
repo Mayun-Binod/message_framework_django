@@ -16,6 +16,7 @@ def regi(request):
             fm=StudentRegistration()
             store.save()
             messages.add_message(request,messages.SUCCESS,"your account has beeen created!!!.")
+            messages.info(request,"now you can login!!!")
             # return redirect('regis')
        
     else:
